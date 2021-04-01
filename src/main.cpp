@@ -7,10 +7,10 @@ void setup()
 	pinMode(13, OUTPUT);
 
 	Serial.begin(115200);
-	
+
 	EEPROM.begin();
 	int flash_count = EEPROM.read(512);
-	
+
 	Serial.print("Flash counter EEPROM :::: ");
 	Serial.println(flash_count);
 	Serial.println("******************");
